@@ -2,16 +2,31 @@
 
 @import "valiables";
 @import "mixins";
+@import "fonts";
 
 // Default styles, delete after starting work
 body{
-  background: $color-primary;
-  color: $color-secondary;
-  @include font('Arial');
+  @include font(Roboto);
 }
-
+img{
+  width: 200px;
+  height: 200px;
+}
+h1{
+  @include font(RobotoBold);
+}
 .wrapper{
   margin: 0 auto;
   max-width: 90%;
+}
+.text{
+  &--light{
+    @include font(RobotoLight);
+  }
+}
+
+.italic{
+  @include font(RobotoLightItalic);
+  text-decoration: underline;
 }
 // Default styles, delete after starting work
