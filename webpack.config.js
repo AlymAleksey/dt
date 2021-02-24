@@ -68,8 +68,8 @@ module.exports = {
           to: path.resolve(__dirname, 'dist'),
         },
         {
-          from: path.resolve(__dirname, 'src/assets/img/content'),
-          to: path.resolve(__dirname, 'dist/assets/img/content'),
+          from: path.resolve(__dirname, 'src/assets/img'),
+          to: path.resolve(__dirname, 'dist/assets/img'),
         },
       ],
     }),
