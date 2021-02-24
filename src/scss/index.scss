@@ -7,10 +7,14 @@
 // Default styles, delete after starting work
 body{
   @include font(Roboto);
+  background: url("../assets/img/design/bg/bg.jpg");
+  background-size: 100%;
 }
-img{
-  width: 200px;
-  height: 200px;
+.logo{
+  width: 60px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
 }
 h1{
   @include font(RobotoBold);

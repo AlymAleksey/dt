@@ -67,6 +67,10 @@ module.exports = {
           from: path.resolve(__dirname, 'src/favicon.ico'),
           to: path.resolve(__dirname, 'dist'),
         },
+        {
+          from: path.resolve(__dirname, 'src/assets/img/content'),
+          to: path.resolve(__dirname, 'dist/assets/img/content'),
+        },
       ],
     }),
   ],
@@ -93,6 +97,17 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
             },
           },
         ],
