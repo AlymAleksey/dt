@@ -1,8 +1,13 @@
 @import "~normalize.css";
 
+@import "valiables";
+@import "mixins";
+
 // Default styles, delete after starting work
 body{
-  background: lightblue;
+  background: $color-primary;
+  color: $color-secondary;
+  @include font('Arial');
 }
 
 .wrapper{

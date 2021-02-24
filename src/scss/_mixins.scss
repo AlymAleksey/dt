@@ -1,0 +1,9 @@
+@mixin resetList() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font($fontName){
+  font-family: $fontName, sans-serif;
+}
